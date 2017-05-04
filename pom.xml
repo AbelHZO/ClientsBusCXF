@@ -34,6 +34,7 @@
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-codegen-plugin</artifactId>
 			<version>3.1.10</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- Found the class: org.apache.cxf.jaxws.JaxWsProxyFactoryBean -->
@@ -42,6 +43,7 @@
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-frontend-jaxws</artifactId>
 			<version>3.1.10</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- Evita: Could not find conduit initiator for address: and transport: 
@@ -51,6 +53,7 @@
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-transports-http</artifactId>
 			<version>3.1.10</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- Contiene la anotación: @ContextConfiguration -->
@@ -78,7 +81,7 @@
 
 	</dependencies>
 
-	<build>
+	<!--build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.cxf</groupId>
@@ -120,6 +123,6 @@
 				</executions>
 			</plugin>
 		</plugins>
-	</build>
+	</build-->
 
 </project>
