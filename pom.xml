@@ -68,8 +68,8 @@
 			necesarias -->
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>4.3.5.RELEASE</version>
+			<artifactId>spring-web</artifactId>
+			<version>4.3.8.RELEASE</version>
 		</dependency>
 
 		<!-- Por ultimo agragamos el obligado api javax servlet. -->
@@ -81,48 +81,48 @@
 
 	</dependencies>
 
-	<!--build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.cxf</groupId>
-				<artifactId>cxf-codegen-plugin</artifactId>
-				<version>3.1.10</version>
-				<executions>
-					<execution>
-						<id>generate-sources</id>
-						<phase>generate-sources</phase>
-						<configuration>
-							<sourceRoot>${basedir}/src/main/java</sourceRoot>
-							<wsdlOptions>
-								<wsdlOption>
-									<wsdl>http://localhost:8080/UsersManagementSOAP/UsersServiceSOAP?wsdl</wsdl>
-									<wsdlLocation>http://localhost:8080/UsersManagementSOAP/UsersServiceSOAP?wsdl</wsdlLocation>
-									<extraargs>
-										<extraarg>-p</extraarg>
-										<extraarg>http://abelhzo.users/=com.abelhzo.client.bus.users</extraarg>
-										<extraarg>-p</extraarg>
-										<extraarg>http://abelhzo.commons/=com.abelhzo.client.bus.commons</extraarg>	
-									</extraargs>
-								</wsdlOption>
-								<wsdlOption>
-									<wsdl>http://localhost:8080/UsersManagementSOAP/RolesServiceSOAP?wsdl</wsdl>
-									<wsdlLocation>http://localhost:8080/UsersManagementSOAP/RolesServiceSOAP?wsdl</wsdlLocation>
-									<extraargs>
-										<extraarg>-p</extraarg>
-										<extraarg>http://abelhzo.roles/=com.abelhzo.client.bus.roles</extraarg>
-										<extraarg>-p</extraarg>
-										<extraarg>http://abelhzo.commons/=com.abelhzo.client.bus.commons</extraarg>			
-									</extraargs>
-								</wsdlOption>
-							</wsdlOptions>
-						</configuration>
-						<goals>
-							<goal>wsdl2java</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build-->
+<!-- 	<build> -->
+<!-- 		<plugins> -->
+<!-- 			<plugin> -->
+<!-- 				<groupId>org.apache.cxf</groupId> -->
+<!-- 				<artifactId>cxf-codegen-plugin</artifactId> -->
+<!-- 				<version>3.1.10</version> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>generate-sources</id> -->
+<!-- 						<phase>generate-sources</phase> -->
+<!-- 						<configuration> -->
+<!-- 							<sourceRoot>${basedir}/src/main/java</sourceRoot> -->
+<!-- 							<wsdlOptions> -->
+<!-- 								<wsdlOption> -->
+<!-- 									<wsdl>http://localhost:8085/UsersManagementSOAP/UsersServiceSOAP?wsdl</wsdl> -->
+<!-- 									<wsdlLocation>http://localhost:8085/UsersManagementSOAP/UsersServiceSOAP?wsdl</wsdlLocation> -->
+<!-- 									<extraargs> -->
+<!-- 										<extraarg>-p</extraarg> -->
+<!-- 										<extraarg>http://abelhzo.users/=com.abelhzo.client.bus.users</extraarg> -->
+<!-- 										<extraarg>-p</extraarg> -->
+<!-- 										<extraarg>http://abelhzo.commons/=com.abelhzo.client.bus.commons</extraarg> -->
+<!-- 									</extraargs> -->
+<!-- 								</wsdlOption> -->
+<!-- 								<wsdlOption> -->
+<!-- 									<wsdl>http://localhost:8085/UsersManagementSOAP/RolesServiceSOAP?wsdl</wsdl> -->
+<!-- 									<wsdlLocation>http://localhost:8085/UsersManagementSOAP/RolesServiceSOAP?wsdl</wsdlLocation> -->
+<!-- 									<extraargs> -->
+<!-- 										<extraarg>-p</extraarg> -->
+<!-- 										<extraarg>http://abelhzo.roles/=com.abelhzo.client.bus.roles</extraarg> -->
+<!-- 										<extraarg>-p</extraarg> -->
+<!-- 										<extraarg>http://abelhzo.commons/=com.abelhzo.client.bus.commons</extraarg> -->
+<!-- 									</extraargs> -->
+<!-- 								</wsdlOption> -->
+<!-- 							</wsdlOptions> -->
+<!-- 						</configuration> -->
+<!-- 						<goals> -->
+<!-- 							<goal>wsdl2java</goal> -->
+<!-- 						</goals> -->
+<!-- 					</execution> -->
+<!-- 				</executions> -->
+<!-- 			</plugin> -->
+<!-- 		</plugins> -->
+<!-- 	</build> -->
 
 </project>

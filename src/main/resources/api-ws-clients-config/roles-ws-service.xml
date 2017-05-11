@@ -9,7 +9,7 @@
 
 	<bean id="rolServiceWSFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
 		<property name="serviceClass" value="com.abelhzo.client.bus.roles.RolesServiceSOAP" />
-		<property name="address" value="http://localhost:8080/UsersManagementSOAP/RolesServiceSOAP" />
+		<property name="address" value="http://localhost:8085/UsersManagementSOAP/RolesServiceSOAP" />
 	</bean>
 
 </beans>

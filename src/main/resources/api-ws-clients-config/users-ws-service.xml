@@ -9,7 +9,7 @@
 
 	<bean id="userServiceWSFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
 		<property name="serviceClass" value="com.abelhzo.client.bus.users.UsersServiceSOAP" />
-		<property name="address" value="http://localhost:8080/UsersManagementSOAP/UsersServiceSOAP" />
+		<property name="address" value="http://localhost:8085/UsersManagementSOAP/UsersServiceSOAP" />
 	</bean>
 
 </beans>

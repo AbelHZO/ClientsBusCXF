@@ -19,7 +19,7 @@ import com.abelhzo.client.bus.commons.ConfigJAX;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="ConfigJAX" type="{http://abelhzo.commons/}configJAX"/&gt;
- *         &lt;element name="idRol" type="{http://www.w3.org/2001/XMLSchema}long"/&gt;
+ *         &lt;element name="idrol" type="{http://www.w3.org/2001/XMLSchema}long"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -31,13 +31,13 @@ import com.abelhzo.client.bus.commons.ConfigJAX;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getRolSOAP", propOrder = {
     "configJAX",
-    "idRol"
+    "idrol"
 })
 public class GetRolSOAP {
 
     @XmlElement(name = "ConfigJAX", required = true)
     protected ConfigJAX configJAX;
-    protected long idRol;
+    protected long idrol;
 
     /**
      * Obtiene el valor de la propiedad configJAX.
@@ -64,19 +64,19 @@ public class GetRolSOAP {
     }
 
     /**
-     * Obtiene el valor de la propiedad idRol.
+     * Obtiene el valor de la propiedad idrol.
      * 
      */
-    public long getIdRol() {
-        return idRol;
+    public long getIdrol() {
+        return idrol;
     }
 
     /**
-     * Define el valor de la propiedad idRol.
+     * Define el valor de la propiedad idrol.
      * 
      */
-    public void setIdRol(long value) {
-        this.idRol = value;
+    public void setIdrol(long value) {
+        this.idrol = value;
     }
 
 }
