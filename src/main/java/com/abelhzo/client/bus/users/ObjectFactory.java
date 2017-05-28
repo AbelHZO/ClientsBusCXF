@@ -5,6 +5,7 @@ import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import com.abelhzo.client.bus.commons.ResponseWrapper;
 
 
 /**
@@ -32,6 +33,7 @@ public class ObjectFactory {
     private final static QName _LoginUserSOAPResponse_QNAME = new QName("http://abelhzo.users/", "loginUserSOAPResponse");
     private final static QName _LogoutUserSOAP_QNAME = new QName("http://abelhzo.users/", "logoutUserSOAP");
     private final static QName _LogoutUserSOAPResponse_QNAME = new QName("http://abelhzo.users/", "logoutUserSOAPResponse");
+    private final static QName _ResponseWrapper_QNAME = new QName("http://abelhzo.users/", "responseWrapper");
     private final static QName _SaveUserSOAP_QNAME = new QName("http://abelhzo.users/", "saveUserSOAP");
     private final static QName _SaveUserSOAPResponse_QNAME = new QName("http://abelhzo.users/", "saveUserSOAPResponse");
     private final static QName _UpdateUserSOAP_QNAME = new QName("http://abelhzo.users/", "updateUserSOAP");
@@ -282,6 +284,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://abelhzo.users/", name = "logoutUserSOAPResponse")
     public JAXBElement<LogoutUserSOAPResponse> createLogoutUserSOAPResponse(LogoutUserSOAPResponse value) {
         return new JAXBElement<LogoutUserSOAPResponse>(_LogoutUserSOAPResponse_QNAME, LogoutUserSOAPResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseWrapper }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://abelhzo.users/", name = "responseWrapper")
+    public JAXBElement<ResponseWrapper> createResponseWrapper(ResponseWrapper value) {
+        return new JAXBElement<ResponseWrapper>(_ResponseWrapper_QNAME, ResponseWrapper.class, null, value);
     }
 
     /**

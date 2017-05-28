@@ -5,6 +5,7 @@ import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
 import javax.xml.bind.annotation.XmlRegistry;
 import javax.xml.namespace.QName;
+import com.abelhzo.client.bus.commons.ResponseWrapper;
 
 
 /**
@@ -28,6 +29,7 @@ public class ObjectFactory {
     private final static QName _GetRolSOAPResponse_QNAME = new QName("http://abelhzo.roles/", "getRolSOAPResponse");
     private final static QName _ListRolSOAP_QNAME = new QName("http://abelhzo.roles/", "listRolSOAP");
     private final static QName _ListRolSOAPResponse_QNAME = new QName("http://abelhzo.roles/", "listRolSOAPResponse");
+    private final static QName _ResponseWrapper_QNAME = new QName("http://abelhzo.roles/", "responseWrapper");
     private final static QName _SaveRolSOAP_QNAME = new QName("http://abelhzo.roles/", "saveRolSOAP");
     private final static QName _SaveRolSOAPResponse_QNAME = new QName("http://abelhzo.roles/", "saveRolSOAPResponse");
     private final static QName _UpdateRolSOAP_QNAME = new QName("http://abelhzo.roles/", "updateRolSOAP");
@@ -170,6 +172,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://abelhzo.roles/", name = "listRolSOAPResponse")
     public JAXBElement<ListRolSOAPResponse> createListRolSOAPResponse(ListRolSOAPResponse value) {
         return new JAXBElement<ListRolSOAPResponse>(_ListRolSOAPResponse_QNAME, ListRolSOAPResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ResponseWrapper }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://abelhzo.roles/", name = "responseWrapper")
+    public JAXBElement<ResponseWrapper> createResponseWrapper(ResponseWrapper value) {
+        return new JAXBElement<ResponseWrapper>(_ResponseWrapper_QNAME, ResponseWrapper.class, null, value);
     }
 
     /**

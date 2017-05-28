@@ -4,12 +4,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://cxf.apache.org/configuration/beans http://cxf.apache.org/schemas/configuration/cxf-beans.xsd">
 
-	<bean id="userServiceWS" class="com.abelhzo.client.bus.users.UsersServiceSOAP"
-		factory-bean="userServiceWSFactory" factory-method="create" />
+<!-- 	<bean id="userServiceWS" class="com.abelhzo.client.bus.users.UsersServiceSOAP" -->
+<!-- 		factory-bean="userServiceWSFactory" factory-method="create" /> -->
 
-	<bean id="userServiceWSFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
-		<property name="serviceClass" value="com.abelhzo.client.bus.users.UsersServiceSOAP" />
-		<property name="address" value="http://localhost:8085/UsersManagementSOAP/UsersServiceSOAP" />
-	</bean>
+<!-- 	<bean id="userServiceWSFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean"> -->
+<!-- 		<property name="serviceClass" value="com.abelhzo.client.bus.users.UsersServiceSOAP" /> -->
+<!-- 		<property name="address" value="http://localhost:8085/UsersManagementSOAP/UsersServiceSOAP" /> -->
+<!-- 	</bean> -->
 
 </beans>

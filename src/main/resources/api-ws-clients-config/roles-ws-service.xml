@@ -4,12 +4,12 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://cxf.apache.org/configuration/beans http://cxf.apache.org/schemas/configuration/cxf-beans.xsd">
 
-	<bean id="rolServiceWS" class="com.abelhzo.client.bus.roles.RolesServiceSOAP"
-		factory-bean="rolServiceWSFactory" factory-method="create" />
+<!-- 	<bean id="rolServiceWS" class="com.abelhzo.client.bus.roles.RolesServiceSOAP" -->
+<!-- 		factory-bean="rolServiceWSFactory" factory-method="create" /> -->
 
-	<bean id="rolServiceWSFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
-		<property name="serviceClass" value="com.abelhzo.client.bus.roles.RolesServiceSOAP" />
-		<property name="address" value="http://localhost:8085/UsersManagementSOAP/RolesServiceSOAP" />
-	</bean>
+<!-- 	<bean id="rolServiceWSFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean"> -->
+<!-- 		<property name="serviceClass" value="com.abelhzo.client.bus.roles.RolesServiceSOAP" /> -->
+<!-- 		<property name="address" value="http://localhost:8085/UsersManagementSOAP/RolesServiceSOAP" /> -->
+<!-- 	</bean> -->
 
 </beans>

@@ -30,19 +30,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ConfigJAX }
-     * 
-     */
-    public ConfigJAX createConfigJAX() {
-        return new ConfigJAX();
-    }
-
-    /**
      * Create an instance of {@link ResponseWrapper }
      * 
      */
     public ResponseWrapper createResponseWrapper() {
         return new ResponseWrapper();
+    }
+
+    /**
+     * Create an instance of {@link ConfigJAX }
+     * 
+     */
+    public ConfigJAX createConfigJAX() {
+        return new ConfigJAX();
     }
 
     /**
