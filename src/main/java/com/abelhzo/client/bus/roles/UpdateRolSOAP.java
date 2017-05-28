@@ -4,7 +4,9 @@ package com.abelhzo.client.bus.roles;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+
 import com.abelhzo.client.bus.commons.ConfigJAX;
 
 
@@ -28,6 +30,7 @@ import com.abelhzo.client.bus.commons.ConfigJAX;
  * 
  * 
  */
+@XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "updateRolSOAP", propOrder = {
     "configJAX",
